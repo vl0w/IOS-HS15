@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PersonData.h"
 
 @interface ViewController : UIViewController
-
-
+-(void) addLabelForName:(NSString*)text atPosition:(int)position;
+-(void) addLabelForPerson:(PersonData*)person atPosition:(int)position;
 @end
 

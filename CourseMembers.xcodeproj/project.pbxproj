@@ -14,6 +14,8 @@
 		175CABB91BA970DF00E49EF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175CABB81BA970DF00E49EF6 /* Images.xcassets */; };
 		175CABBC1BA970DF00E49EF6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175CABBA1BA970DF00E49EF6 /* LaunchScreen.xib */; };
 		175CABC81BA970DF00E49EF6 /* CourseMembersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 175CABC71BA970DF00E49EF6 /* CourseMembersTests.m */; };
+		175CABD31BA974EB00E49EF6 /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 175CABD21BA974EB00E49EF6 /* DataProvider.m */; };
+		175CABD61BA98AF300E49EF6 /* PersonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 175CABD51BA98AF300E49EF6 /* PersonData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		175CABC11BA970DF00E49EF6 /* CourseMembersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseMembersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		175CABC61BA970DF00E49EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175CABC71BA970DF00E49EF6 /* CourseMembersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseMembersTests.m; sourceTree = "<group>"; };
+		175CABD11BA974EB00E49EF6 /* DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		175CABD21BA974EB00E49EF6 /* DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataProvider.m; sourceTree = "<group>"; };
+		175CABD41BA98AF300E49EF6 /* PersonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonData.h; sourceTree = "<group>"; };
+		175CABD51BA98AF300E49EF6 /* PersonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				175CABB81BA970DF00E49EF6 /* Images.xcassets */,
 				175CABBA1BA970DF00E49EF6 /* LaunchScreen.xib */,
 				175CABAB1BA970DF00E49EF6 /* Supporting Files */,
+				175CABD11BA974EB00E49EF6 /* DataProvider.h */,
+				175CABD21BA974EB00E49EF6 /* DataProvider.m */,
+				175CABD41BA98AF300E49EF6 /* PersonData.h */,
+				175CABD51BA98AF300E49EF6 /* PersonData.m */,
 			);
 			path = CourseMembers;
 			sourceTree = "<group>";
@@ -163,7 +173,7 @@
 		175CABA01BA970DF00E49EF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Jonas Hansen";
 				TargetAttributes = {
 					175CABA71BA970DF00E49EF6 = {
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175CABD61BA98AF300E49EF6 /* PersonData.m in Sources */,
 				175CABB41BA970DF00E49EF6 /* ViewController.m in Sources */,
 				175CABB11BA970DF00E49EF6 /* AppDelegate.m in Sources */,
+				175CABD31BA974EB00E49EF6 /* DataProvider.m in Sources */,
 				175CABAE1BA970DF00E49EF6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +296,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -349,6 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CourseMembers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.vl0w.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -359,6 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CourseMembers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.vl0w.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -377,6 +392,7 @@
 				);
 				INFOPLIST_FILE = CourseMembersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.vl0w.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CourseMembers.app/CourseMembers";
 			};
@@ -392,6 +408,7 @@
 				);
 				INFOPLIST_FILE = CourseMembersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.vl0w.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CourseMembers.app/CourseMembers";
 			};
@@ -416,6 +433,7 @@
 				175CABCD1BA970DF00E49EF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		175CABCE1BA970DF00E49EF6 /* Build configuration list for PBXNativeTarget "CourseMembersTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +442,7 @@
 				175CABD01BA970DF00E49EF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
