@@ -16,7 +16,7 @@ struct UIConstants{
     static let NAME_LABEL_HEIGHT:CGFloat = 30
     static let NAME_LABEL_OFFSET:CGFloat = 10
     
-    static let USE_PERSON_DATE : Bool = true
+    static let USE_PERSON_DATE : Bool = false
 }
 
 
