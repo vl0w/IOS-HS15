@@ -10,14 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var viewCounterLabel: UILabel!
+    @IBOutlet weak var viewCounterLabel: UILabel?
     
     let secondViewController = SecondViewController()
     var appearanceCounter : Int = 0 {
         didSet {
-            if((viewCounterLabel) != nil){
-                viewCounterLabel.text = "ViewCounter: " + appearanceCounter.description
-            }
+            viewCounterLabel?.text = "ViewCounter: " + appearanceCounter.description
         }
     }
     
