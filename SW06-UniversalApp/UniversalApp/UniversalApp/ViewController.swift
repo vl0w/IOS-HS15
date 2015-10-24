@@ -10,8 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var byLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let localizedText = NSLocalizedString("CustomLocalization", comment: "reeekt")
+        byLabel.text = byLabel.text! + localizedText
         // Do any additional setup after loading the view, typically from a nib.
     }
 

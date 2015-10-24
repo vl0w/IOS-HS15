@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171E4C7B1BDB9DE30096E943 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 171E4C7D1BDB9DE30096E943 /* Localizable.strings */; };
 		1758A7861BDB866D009DAF98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758A7851BDB866D009DAF98 /* AppDelegate.swift */; };
 		1758A7881BDB866D009DAF98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758A7871BDB866D009DAF98 /* ViewController.swift */; };
 		1758A78B1BDB866D009DAF98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1758A7891BDB866D009DAF98 /* Main.storyboard */; };
 		1758A78D1BDB866D009DAF98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1758A78C1BDB866D009DAF98 /* Assets.xcassets */; };
 		1758A7901BDB866D009DAF98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1758A78E1BDB866D009DAF98 /* LaunchScreen.storyboard */; };
+		177D982E1BDB918E0078636E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 177D98301BDB918E0078636E /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		171E4C7C1BDB9DE30096E943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		171E4C7E1BDB9DE50096E943 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		171E4C7F1BDB9DE60096E943 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1758A7821BDB866D009DAF98 /* UniversalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1758A7851BDB866D009DAF98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1758A7871BDB866D009DAF98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,10 @@
 		1758A78C1BDB866D009DAF98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1758A78F1BDB866D009DAF98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1758A7911BDB866D009DAF98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177D982F1BDB918E0078636E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		177D98311BDB918E0078636E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		177D98321BDB918E0078636E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		177D98341BDB92DF0078636E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +63,14 @@
 		1758A7841BDB866D009DAF98 /* UniversalApp */ = {
 			isa = PBXGroup;
 			children = (
+				177D98301BDB918E0078636E /* InfoPlist.strings */,
 				1758A7851BDB866D009DAF98 /* AppDelegate.swift */,
 				1758A7871BDB866D009DAF98 /* ViewController.swift */,
 				1758A7891BDB866D009DAF98 /* Main.storyboard */,
 				1758A78C1BDB866D009DAF98 /* Assets.xcassets */,
 				1758A78E1BDB866D009DAF98 /* LaunchScreen.storyboard */,
 				1758A7911BDB866D009DAF98 /* Info.plist */,
+				171E4C7D1BDB9DE30096E943 /* Localizable.strings */,
 			);
 			path = UniversalApp;
 			sourceTree = "<group>";
@@ -106,6 +117,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 1758A7791BDB866D009DAF98;
 			productRefGroup = 1758A7831BDB866D009DAF98 /* Products */;
@@ -122,7 +134,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171E4C7B1BDB9DE30096E943 /* Localizable.strings in Resources */,
 				1758A7901BDB866D009DAF98 /* LaunchScreen.storyboard in Resources */,
+				177D982E1BDB918E0078636E /* InfoPlist.strings in Resources */,
 				1758A78D1BDB866D009DAF98 /* Assets.xcassets in Resources */,
 				1758A78B1BDB866D009DAF98 /* Main.storyboard in Resources */,
 			);
@@ -143,10 +157,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		171E4C7D1BDB9DE30096E943 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171E4C7C1BDB9DE30096E943 /* Base */,
+				171E4C7E1BDB9DE50096E943 /* en */,
+				171E4C7F1BDB9DE60096E943 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		1758A7891BDB866D009DAF98 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1758A78A1BDB866D009DAF98 /* Base */,
+				177D98321BDB918E0078636E /* de */,
+				177D98341BDB92DF0078636E /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -155,8 +181,17 @@
 			isa = PBXVariantGroup;
 			children = (
 				1758A78F1BDB866D009DAF98 /* Base */,
+				177D98311BDB918E0078636E /* de */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		177D98301BDB918E0078636E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				177D982F1BDB918E0078636E /* de */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -286,6 +321,7 @@
 				1758A7961BDB866D009DAF98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

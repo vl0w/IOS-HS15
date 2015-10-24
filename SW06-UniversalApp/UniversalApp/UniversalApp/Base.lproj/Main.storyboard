@@ -22,11 +22,10 @@
                                 <rect key="frame" x="92" y="40" width="416" height="60"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
-                                    <rect key="frame" x="-8" y="40" width="416" height="60"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="g8h-Gr-Uxj">
@@ -41,6 +40,13 @@
                                 <rect key="frame" x="310" y="120" width="250" height="250"/>
                                 <animations/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="programmed by your Mother" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V33-3A-J9W">
+                                <rect key="frame" x="40" y="559.5" width="219.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watermelon" translatesAutoresizingMaskIntoConstraints="NO" id="pi6-C1-vLB">
                                 <rect key="frame" x="310" y="390" width="250" height="250"/>
                                 <animations/>
@@ -50,6 +56,7 @@
                         <color key="backgroundColor" red="1" green="0.5880425742935218" blue="0.94120611971535084" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="g8h-Gr-Uxj" firstAttribute="top" secondItem="IV4-0D-J5W" secondAttribute="bottom" constant="20" id="6HZ-kT-G0B"/>
+                            <constraint firstItem="V33-3A-J9W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Efg-PO-Jbg"/>
                             <constraint firstItem="IV4-0D-J5W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gob-qi-aEd"/>
                             <constraint firstItem="g8h-Gr-Uxj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Iog-Na-f4h"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Oav-F1-Ajn" secondAttribute="trailing" constant="20" id="RGS-iV-fXP"/>
@@ -57,6 +64,9 @@
                             <constraint firstItem="whD-SK-p1f" firstAttribute="top" secondItem="g8h-Gr-Uxj" secondAttribute="bottom" constant="20" id="UJR-Qq-5Gj"/>
                             <constraint firstItem="g8h-Gr-Uxj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Uys-Su-jZt"/>
                             <constraint firstItem="whD-SK-p1f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="X6M-qE-2Gj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V33-3A-J9W" secondAttribute="bottom" constant="20" id="YOb-31-HuI">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="pi6-C1-vLB" firstAttribute="top" secondItem="Oav-F1-Ajn" secondAttribute="bottom" constant="20" id="atZ-GX-Uly"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pi6-C1-vLB" secondAttribute="trailing" constant="20" id="dSI-p9-QaL"/>
                             <constraint firstItem="IV4-0D-J5W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="gJm-al-qoc"/>
@@ -77,11 +87,10 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <exclude reference="whD-SK-p1f"/>
+                                <include reference="V33-3A-J9W"/>
                                 <exclude reference="pi6-C1-vLB"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="UJR-Qq-5Gj"/>
-                                <exclude reference="atZ-GX-Uly"/>
                                 <include reference="6HZ-kT-G0B"/>
                                 <exclude reference="Iog-Na-f4h"/>
                                 <exclude reference="Uys-Su-jZt"/>
@@ -91,13 +100,20 @@
                                 <include reference="TBz-tB-WFO"/>
                                 <exclude reference="sqp-TW-xAk"/>
                                 <include reference="sw2-wt-Bg7"/>
+                                <exclude reference="UJR-Qq-5Gj"/>
+                                <exclude reference="atZ-GX-Uly"/>
+                                <include reference="Efg-PO-Jbg"/>
+                                <include reference="YOb-31-HuI"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="byLabel" destination="V33-3A-J9W" id="9Mx-vF-jQb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="445" y="474"/>
+            <point key="canvasLocation" x="444" y="474"/>
         </scene>
     </scenes>
     <resources>
